@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+.container  {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-line {
+    background: rgba(24,54,80,.65);
+}
+.top-navbar {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+}
+p > i {
+    display: inline-block;
+    font-size: 16px;
+    color: #34ccff;
+    margin: 0 6px 0 0;
+}
+p, .phone {
+    display: flex;
+    align-items: center;
+}
+p, .email {
+     display: flex;
+     align-items: center;
+ }
+p, .working-hours {
+    display: flex;
+    align-items: center;
+}
+p, .office {
+    display: flex;
+    align-items: center;
+}
+.language {
+    position: relative;
+    padding: 18px 40px 19px 20px;
+    cursor: pointer;
+}
+.language:after {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin: -7px 0 0;
+}
+.email > i {
+    font-size: 12px;
+}
+.office {
+    max-width: 200px;
+    width: 100%;
+    position: relative;
+    padding: 18px 40px 19px 20px;
+    background: #34ccff;
+    cursor: pointer;
+}
+.office:after {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin: -7px 0 0;
+}
+.office > i {
+    margin: 0 15px 0 0;
+}
