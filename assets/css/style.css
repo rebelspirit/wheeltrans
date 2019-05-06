@@ -236,6 +236,9 @@ nav > a:hover {
     min-height: 380px;
     background: rgba(24,54,80,.65) !important;
     padding: 65px 10px 10px 65px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
 }
 .blue-line {
     height: 3px;
@@ -261,6 +264,9 @@ nav > a:hover {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
+}
+.slider-description:hover .vanilla-tilt {
+    transform: translateZ(35px);
 }
 .slider-line {
     width: 100%;
@@ -481,16 +487,280 @@ nav > a:hover {
 }
 .owl-item {
     height: 100%;
+    padding: 3px;
 }
 .service-slides-item {
     width: 245px;
     height: 400px;
-    background: #000;
+    background: #fff;
     margin: 0 auto !important;
 }
 .owl-nav {
     display: none;
 }
-
-
-
+.service-slides-item > h6 {
+    font-size: 14px;
+    margin: 19px 0;
+    padding: 0 30px;
+    letter-spacing: .04em;
+    font-weight: 600;
+    color: #183650 !important;
+}
+.service-slides-item > p {
+    line-height: 24px;
+    margin: 0 0 26px 0 !important;
+    padding: 0 30px !important;
+    font-size: 13px;
+}
+.contact-now {
+    max-height: 334px;
+    background: transparent;
+}
+.contact-now > .container {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-now-description {
+    width: 100%;
+    max-width: 650px;
+}
+.contact-now-description > h2 {
+    color: #183650 !important;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.contact-now-description > p {
+    color: #183650 !important;
+    margin-bottom: 25px !important;
+}
+.contact-button {
+    width: 195px;
+    height: 53px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #34ccff;
+    background: #34ccff;
+    border-radius: 50px;
+}
+.contact-button > i {
+    margin-left: 10px;
+    font-size: 13px;
+}
+.contact-button:hover {
+    color: #183650;
+    background: transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.contact-now-girl {
+    width: 475px;
+    height: 334px;
+    background-image: url(../images/girl.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+.faq {
+    min-height: 700px;
+    padding-top: 80px;
+}
+.faq > .container {
+    display: flex;
+    justify-content: space-between;
+}
+.faq-content {
+    width: 100%;
+    max-width: 540px;
+}
+.faq-content > h2 {
+    color: #183650 !important;
+}
+.accordion-title {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    font-weight: 400;
+    color: #183650 !important;
+    padding: 13px 30px !important;
+    border: 1px solid #e6e6e6;
+    border-bottom: 1px solid transparent;
+}
+.accordion:last-child .accordion-title {
+    border-bottom: 1px solid #e6e6e6;
+}
+.accordion-title:hover {
+    background-color: #34ccff;
+    color: #fff !important;
+    border: 1px solid #34ccff;
+    cursor: pointer;
+}
+[data-accordion].open > [data-control] {
+    background-color: #34ccff;
+    color: #fff !important;
+    border: 1px solid #34ccff;
+}
+[data-accordion] > [data-control]:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+[data-accordion].open > [data-control]:after {
+    top: 50%;
+    transform: translateY(-50%) rotate(-180deg);;
+}
+.accordion-row {
+    border: none !important;
+    padding: 13px 30px !important;
+    line-height: 26px;
+    margin: 0 0 26px;
+}
+.events {
+    width: 100%;
+    max-width: 540px;
+    max-height: 332px;
+}
+.events > h2 {
+    color: #183650 !important;
+}
+.event-slides {
+    display: flex;
+}
+.event-item {
+    display: flex;
+    border: 1px solid #e6e6e6;;
+}
+.event-description {
+    padding: 30px 20px;
+}
+.event-description > h4 {
+    line-height: 30px;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #183650 !important;
+}
+.event-description > p {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 20px !important;
+}
+.events-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    height: 12px;
+    margin: 30px auto;
+}
+.staff {
+    min-height: 600px;
+    padding: 80px 0 !important;
+    background-image: url(../images/staff1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.staff1_bg{
+    background-image: url(../images/staff1.jpg);
+}
+.staff2_bg{
+    background-image: url(../images/staff2.jpg);
+}
+.staff3_bg{
+    background-image: url(../images/staff3.jpg);
+}
+.staff-container {
+    width: 100%;
+    max-width: 635px;
+    max-height: 444px;
+    background: #fff;
+    padding: 35px 30px;
+}
+.quotes {
+    position: relative;
+    min-height: 65px;
+    margin-bottom: 15px;
+}
+.quotes:before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '\e958';
+    font-family: 'stm';
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 64px;
+    color: #34ccff;
+    margin: 0 0 15px;
+}
+.staff-item > p {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #183650 !important;
+    text-align: center;
+}
+.sep {
+    position: relative;
+    color: #34ccff;
+    margin: 20px auto;
+    width: 18px;
+}
+.sep:before {
+    content: '';
+    position: absolute;
+    left: -85px;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background: #34ccff;
+}
+.sep:after {
+    content: '';
+    position: absolute;
+    right: -85px;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background: #34ccff;
+}
+.staff-info {
+    margin-bottom: 10px;
+}
+.staff-name {
+    color: #404040 !important;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .04em;
+}
+.staff-position {
+    font-size: 13px;
+    text-align: center;
+}
+.staff-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    height: 12px;
+    margin: 25px auto;
+}
