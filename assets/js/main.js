@@ -21,18 +21,26 @@ jQuery(document).ready(function ($){
         dotsContainer: '#staff-navigation',
         items: 1,
         loop: true,
-        autoplay: false,
-        autoplayTimeout: 4000,
+        autoplay: true,
+        autoplayTimeout: 7000,
         smartSpeed: 800,
-        // onTranslated: function () {
-        //     //let item = $("#staff-slider").find(".owl-item.active .anna");
-        //     if($(".owl-item.active").find(".anna")){
-        //         console.log("true")
-        //     } else {
-        //         console.log("false")
-        //     }
-        //
-        // }
+        onTranslated: function () {
+            let item = $("#staff-slider").find("div.owl-item.active").find("div.item").find("div.staff-item");
+            let container = $(".staff");
+            let bg1 = "url(assets/images/staff1.jpg)";
+            let bg2 = "url(assets/images/staff2.jpg)";
+            let bg3 = "url(assets/images/staff3.jpg)";
+
+            if(item.hasClass("steve")){
+                container.css("background-image", bg1)
+            }
+            if(item.hasClass("anna")){
+                container.css("background-image", bg2)
+            }
+            if(item.hasClass("jonathan")){
+                container.css("background-image", bg3)
+            }
+        }
     });
 
     // Vanilla Tilt
@@ -47,6 +55,7 @@ jQuery(document).ready(function ($){
     // Parallax
     $('.contact-now').parallax({imageSrc: './assets/images/parallax.jpg'});
 
+    // Accordion
     $('.accordion').accordion({
         "transitionSpeed": 400
     });

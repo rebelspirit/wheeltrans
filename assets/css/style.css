@@ -659,11 +659,16 @@ nav > a:hover {
 .staff {
     min-height: 600px;
     padding: 80px 0 !important;
-    background-image: url(../images/staff1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    transition: background .3s ease;
+    background-image: url(../images/staff1.jpg);
 }
 .staff1_bg{
     background-image: url(../images/staff1.jpg);
@@ -763,4 +768,103 @@ nav > a:hover {
     max-width: 60px;
     height: 12px;
     margin: 25px auto;
+}
+.partners > .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.partners-item {
+    width: 198px;
+    height: 65px;
+    padding: 0 30px;
+}
+.partners-item > img {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .6;
+    cursor: pointer;
+}
+.partners-item > img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+}
+.contact-form {
+    background: #f7f7f7 !important;
+}
+.contact-form > .container {
+    display: flex;
+}
+.benefits-container {
+    width: 100%;
+    max-width: 470px;
+    padding-top: 80px;
+}
+.benefits-container > h2 {
+    color: #183650 !important;
+}
+.benefits-container > p {
+    margin-bottom: 40px !important;
+}
+.benefits-items-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    max-width: 235px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+}
+.benefits-item > p {
+    text-align: left;
+    color: #183650 !important;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 20px !important;
+}
+.benefits-item > svg {
+    stroke: #34ccff;
+}
+.contact-form-container {
+    padding: 75px 40px;
+    background-color: #183650 !important;
+    width: 100%;
+    max-width: 635px;
+}
+input {
+    margin-bottom: 20px;
+}
+textarea {
+    margin-bottom: 20px;
+}
+select {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 16px 7px;
+    width: 100%;
+    border: 1px solid #e6e6e6 !important;
+    background: #fff;
+    outline: none !important;
+    height: auto;
+    color: #a6a6a6;
+    border-radius: 0;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
