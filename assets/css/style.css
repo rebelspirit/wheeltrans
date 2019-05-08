@@ -868,3 +868,32 @@ select {
     margin-bottom: 20px;
     cursor: pointer;
 }
+.map-container {
+    position: relative;
+}
+div#map {
+    min-width: 100%;
+    min-height: 670px;
+}
+.office-map {
+    min-height: 240px;
+    background: rgba(24,54,80,.9) !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.office-map > .container {
+    padding: 30px 0;
+}
+.c_address, .c_telephone, .c_email {
+    color: rgba(255,255,255,.7);
+    margin-bottom: 10px !important;
+    font-size: 15px;
+}
+.copyright {
+    font-size: 15px !important;
+    padding: 0 !important;
+}
+.fa-heart {
+    color: #ff5252;
+}
