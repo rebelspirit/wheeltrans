@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04df65e3-6aed-4b08-9a8f-834e4295b9af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -119,8 +116,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/js/main.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="828">
-                      <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+                    <state relative-caret-position="483">
+                      <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
                     </state>
                   </provider>
                 </entry>
@@ -196,8 +193,8 @@
         <option value="$PROJECT_DIR$/assets/js/map.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/css/mobile.css" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
       </list>
     </option>
   </component>
@@ -287,12 +284,12 @@
       <workItem from="1557213796035" duration="22824000" />
       <workItem from="1557301103121" duration="20685000" />
       <workItem from="1557386494510" duration="24545000" />
-      <workItem from="1557472465836" duration="17462000" />
+      <workItem from="1557472465836" duration="20554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153957000" />
+    <option name="totallyTimeSpent" value="157049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -466,8 +463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="483">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>

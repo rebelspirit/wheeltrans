@@ -5,7 +5,7 @@ jQuery(document).ready(function ($){
         dotsContainer: '#service-navigation',
         items: 3,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         smartSpeed: 800,
         responsive : {
