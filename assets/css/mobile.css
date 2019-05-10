@@ -1,4 +1,7 @@
 @media (max-width: 1100px) {
+    body {
+        overflow-x: hidden !important;
+    }
     .header-line, .navigation, .slider {
         display: none !important;
     }
@@ -221,6 +224,8 @@
     }
     .event-item {
         flex-direction: column-reverse;
-        max-width: 290px;
+    }
+    .staff-container {
+        max-height: 600px;
     }
 }

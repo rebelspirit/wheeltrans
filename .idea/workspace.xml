@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04df65e3-6aed-4b08-9a8f-834e4295b9af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/lifetext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/owl.theme.green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/owl.theme.green.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +23,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="414">
-                      <caret line="256" selection-start-line="256" selection-end-line="325" selection-end-column="14" />
+                    <state relative-caret-position="458">
+                      <caret line="385" column="58" lean-forward="true" selection-start-line="385" selection-start-column="58" selection-end-line="385" selection-end-column="58" />
                       <folding>
                         <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                         <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -76,10 +70,12 @@
                         <element signature="n#style#0;n#path#11;n#g#0;n#svg#0;n#div#3;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#path#12;n#g#0;n#svg#0;n#div#3;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                         <element signature="n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#div#4;n#main#0;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#div#5;n#main#0;n#body#0;n#html#0;n#!!top" />
                         <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
                         <element signature="n#style#0;n#label#0;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                        <marker date="1557476597522" expanded="true" signature="23187:23201" ph="..." />
+                        <marker date="1557477295641" expanded="true" signature="23187:23201" ph="..." />
                       </folding>
                     </state>
                   </provider>
@@ -122,8 +118,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/css/mobile.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="744">
-                      <caret line="223" column="24" selection-start-line="223" selection-start-column="24" selection-end-line="223" selection-end-column="24" />
+                    <state relative-caret-position="46">
+                      <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
                     </state>
                   </provider>
                 </entry>
@@ -268,12 +264,12 @@
       <workItem from="1557213796035" duration="22824000" />
       <workItem from="1557301103121" duration="20685000" />
       <workItem from="1557386494510" duration="24545000" />
-      <workItem from="1557472465836" duration="4617000" />
+      <workItem from="1557472465836" duration="5947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141112000" />
+    <option name="totallyTimeSpent" value="142442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -368,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="256" selection-start-line="256" selection-end-line="325" selection-end-column="14" />
+        <state relative-caret-position="458">
+          <caret line="385" column="58" lean-forward="true" selection-start-line="385" selection-start-column="58" selection-end-line="385" selection-end-column="58" />
           <folding>
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -415,18 +411,20 @@
             <element signature="n#style#0;n#path#11;n#g#0;n#svg#0;n#div#3;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#path#12;n#g#0;n#svg#0;n#div#3;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#label#0;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1557476597522" expanded="true" signature="23187:23201" ph="..." />
+            <marker date="1557477295641" expanded="true" signature="23187:23201" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="223" column="24" selection-start-line="223" selection-start-column="24" selection-end-line="223" selection-end-column="24" />
+        <state relative-caret-position="46">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
