@@ -7,7 +7,25 @@ jQuery(document).ready(function ($){
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
-        smartSpeed: 800
+        smartSpeed: 800,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 2,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 2,
+            },
+            // breakpoint from 1000 up
+            1000: {
+                items: 3,
+            }
+        }
     });
     $("#event-slides").owlCarousel({
         dotsContainer: '#events-navigation',
@@ -15,7 +33,7 @@ jQuery(document).ready(function ($){
         loop: true,
         autoplay: true,
         autoplayTimeout: 6000,
-        smartSpeed: 800
+        smartSpeed: 800,
     });
     $("#staff-slider").owlCarousel({
         dotsContainer: '#staff-navigation',
@@ -60,5 +78,11 @@ jQuery(document).ready(function ($){
         "transitionSpeed": 400
     });
 
+    //Mobile Menu Button
+    $("#menu_toggle").click(function () {
+        $("#menu_toggle").toggleClass("open");
+        $(".mobile-menu").toggle();
+
+    })
 
 });

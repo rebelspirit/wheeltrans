@@ -876,7 +876,9 @@ div#map {
     min-height: 670px;
 }
 .office-map {
-    min-height: 240px;
+    display: flex;
+    align-items: center;
+    min-height: 170px;
     background: rgba(24,54,80,.9) !important;
     position: absolute;
     bottom: 0;
@@ -896,4 +898,46 @@ div#map {
 }
 .fa-heart {
     color: #ff5252;
+}
+
+.life-text {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+.life-text p {
+    font-size: 2rem;
+    padding: 1rem !important;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.life-text p span.typed-text {
+    font-weight: normal;
+    color: #34ccff;
+}
+.life-text p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    height: 30px;
+    animation: blink 1s infinite;
+}
+.life-text p span.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+.navigation-mobile {
+    display: none;
 }
