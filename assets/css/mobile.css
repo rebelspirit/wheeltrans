@@ -228,4 +228,17 @@
     .staff-container {
         max-height: 600px;
     }
+    .partners-item {
+        display: none;
+        padding: 0 10px;
+    }
+    .partners-item:nth-child(1) {
+        display: block;
+    }
+    .partners-item:nth-child(2) {
+        display: block;
+    }
+    .contact-form > .container {
+        flex-direction: column-reverse;
+    }
 }
