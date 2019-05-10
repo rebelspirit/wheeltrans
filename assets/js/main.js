@@ -5,7 +5,7 @@ jQuery(document).ready(function ($){
         dotsContainer: '#service-navigation',
         items: 3,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         smartSpeed: 800,
         responsive : {
@@ -15,14 +15,14 @@ jQuery(document).ready(function ($){
             },
             // breakpoint from 480 up
             480 : {
-                items: 2,
+                items: 1,
             },
             // breakpoint from 768 up
             768 : {
-                items: 2,
+                items: 1,
             },
             // breakpoint from 1000 up
-            1000: {
+            1100: {
                 items: 3,
             }
         }
@@ -78,11 +78,27 @@ jQuery(document).ready(function ($){
         "transitionSpeed": 400
     });
 
+    // Desktop Slider navigation
+    $(".slider-navigation-item").click(function () {
+        let index = $(".slider-navigation-item").index(this);
+        let slide = $(".slider-item");
+
+        slide.each(function (i) {
+            if (index === i) {
+                console.log(index, i, this);
+                console.dir(this);
+                this.classList.add("slider-active")
+            } else {
+                this.classList.remove("slider-active")
+            }
+            //console.log(i)
+        })
+    });
+
     //Mobile Menu Button
     $("#menu_toggle").click(function () {
         $("#menu_toggle").toggleClass("open");
         $(".mobile-menu").toggle();
-
-    })
+    });
 
 });

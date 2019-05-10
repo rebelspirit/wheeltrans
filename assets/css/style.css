@@ -146,6 +146,7 @@ nav > a {
     padding: 31px 15px;
     border-bottom: 5px solid transparent;
     cursor: pointer !important;
+    text-shadow: 1px 1px 1px black;
 }
 nav > a:hover {
     border-bottom: 5px solid #34ccff;
@@ -163,6 +164,9 @@ nav > a:hover {
     cursor: pointer;
     padding: 27px 0;
     color: #fff;
+}
+.search-button i {
+    text-shadow: 1px 1px 1px black;
 }
 .search {
     margin-left: 50px;
@@ -256,6 +260,7 @@ nav > a:hover {
     font-weight: 400;
     font-size: 48px;
     color: #fff;
+    text-shadow: 1px 1px 1px black;
 }
 .slider-description > p {
     line-height: 28px;
@@ -264,6 +269,7 @@ nav > a:hover {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
+    text-shadow: 1px 1px 1px black;
 }
 .slider-description:hover .vanilla-tilt {
     transform: translateZ(35px);
@@ -620,7 +626,6 @@ nav > a:hover {
 .events {
     width: 100%;
     max-width: 540px;
-    max-height: 332px;
 }
 .events > h2 {
     color: #183650 !important;

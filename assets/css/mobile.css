@@ -185,9 +185,10 @@
     }
     .service > .container {
         flex-direction: column;
+        align-items: center;
     }
     .service-description {
-        max-width: 320px;
+        max-width: 540px;
         margin-bottom: 50px;
     }
     .service-navigation {
@@ -197,7 +198,10 @@
         max-width: 200px;
     }
     .service-slides-item {
-        width: 280px;
+        min-height: 400px;
+        height: unset;
+        width: unset;
+        padding-bottom: 30px;
     }
     .contact-now {
         max-height: 490px;
@@ -215,12 +219,10 @@
     }
     .faq > .container {
         flex-direction: column-reverse;
+        align-items: center;
     }
     .faq-content {
         margin-bottom: 50px;
-    }
-    .events {
-        max-height: 900px;
     }
     .event-item {
         flex-direction: column-reverse;
@@ -240,5 +242,11 @@
     }
     .contact-form > .container {
         flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media (min-width: 665px) {
+    .stats > .container {
+        flex-direction: row;
     }
 }
