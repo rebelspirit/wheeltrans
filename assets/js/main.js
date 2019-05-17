@@ -82,23 +82,77 @@ jQuery(document).ready(function ($){
     $(".slider-navigation-item").click(function () {
         let index = $(".slider-navigation-item").index(this);
         let slide = $(".slider-item");
+        let slideIcon = $(".slider-navigation-item .slider-navigation-image");
+
+        slideIcon.each(function () {
+            this.classList.remove("active-slide")
+
+        });
 
         slide.each(function (i) {
             if (index === i) {
-                console.log(index, i, this);
-                console.dir(this);
-                this.classList.add("slider-active")
+                //console.log(index, i, this);
+                this.classList.add("slider-active");
+                slideIcon[index].classList.add("active-slide");
             } else {
-                this.classList.remove("slider-active")
+                this.classList.remove("slider-active");
             }
-            //console.log(i)
         })
     });
 
-    //Mobile Menu Button
+    // Mobile Menu Button
     $("#menu_toggle").click(function () {
         $("#menu_toggle").toggleClass("open");
         $(".mobile-menu").toggle();
     });
+
+    // Language option
+    $(".lang:eq(1)").hide();
+    $(".lang:eq(2)").hide();
+
+    $(".language").click(function () {
+        $(".language").toggleClass("open");
+        $(".lang:eq(1)").toggle();
+        $(".lang:eq(2)").toggle();
+    });
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        const div = $(".language"); // тут указываем ID элемента
+        if (!div.is(e.target && $(".language").hasClass("open")) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            $(".lang:eq(1)").hide();
+            $(".lang:eq(2)").hide();
+            $(".language").removeClass("open");// скрываем его
+        }
+    });
+
+    // Smooth scroll JQuery
+    $('nav a').click(function () {
+        const link = this;
+        $.smoothScroll({
+            speed: 1500,
+            scrollTarget: link.hash
+        });
+        return false;
+    });
+
+    $('.search-button').click(function () {
+        const link = this;
+        $.smoothScroll({
+            speed: 1500,
+            scrollTarget: link.hash
+        });
+        return false;
+    });
+
+    $('.scroll-up').click(function () {
+        const link = this;
+        $.smoothScroll({
+            speed: 1500,
+            scrollTarget: link.hash
+        });
+        return false;
+    });
+
 
 });

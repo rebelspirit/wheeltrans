@@ -37,7 +37,7 @@ header {
 .header-line {
     position: relative;
     background: rgba(24,54,80,.65);
-    z-index: 10;
+    z-index: 11;
 }
 .top-navbar {
     min-height: 50px;
@@ -71,7 +71,6 @@ p .office {
 }
 .language {
     position: relative;
-    padding: 18px 40px 19px 20px;
     cursor: pointer;
 }
 .language:after {
@@ -87,6 +86,49 @@ p .office {
     top: 50%;
     margin: -7px 0 0;
 }
+.russian, .ukraine {
+    position: absolute;
+    background: black;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    width: 100%;
+}
+.lang:nth-child(1) {
+    top: 100%;
+}
+.lang:nth-child(2) {
+    top: 200%;
+}
+.russian, .english, .ukraine {
+    padding: 18px 40px 19px 20px;
+    border: 1px solid transparent;
+}
+.russian:hover, .english:hover, .ukraine:hover,
+.russian:active, .english:active, .ukraine:active,
+.russian:focus, .english:focus, .ukraine:focus {
+    background: #183650;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.russian:active, .english:active, .ukraine:active,
+.russian:focus, .english:focus, .ukraine:focus {
+    background: black;
+}
+.open .lang:first-child {
+    background: #183650;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
 .email > i {
     font-size: 12px;
 }
@@ -157,6 +199,7 @@ nav > a:hover {
     transition: all .3s ease;
 }
 .search-button {
+    display: block;
     position: relative;
     width: 100px;
     text-align: center;
@@ -946,3 +989,28 @@ div#map {
 .navigation-mobile {
     display: none;
 }
+.scroll-up {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 2em;
+    right: 2em;
+}
+.scroll-up a {
+    background-color: rgba(135, 135, 135, 0.5);
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
+.scroll-up:hover a {
+     background-color: rgba(135, 135, 135, 1);
+     -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+     -ms-transition: all .3s ease;
+     -o-transition: all .3s ease;
+     transition: all .3s ease;
+ }

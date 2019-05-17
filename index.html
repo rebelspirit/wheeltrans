@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
 </head>
-<body>
-    <header>
+<body class="animated fadeIn">
+    <header id="home">
         <div class="header-line animated fadeInDownBig">
             <div class="top-navbar container">
-                <div class="language">English</div>
+                <div class="language">
+                    <div class="english lang">English</div>
+                    <div class="russian lang animated fadeIn">Russian</div>
+                    <div class="ukraine lang animated fadeIn">Ukrainian</div>
+                </div>
                 <p class="phone">
                     <i class="stm-iphone"></i>
                     CALL FREE: +38 (044) 537-23-01</p>
@@ -36,16 +40,16 @@
         <div class="navigation container animated fadeInDown">
             <a href="#" class="logo"></a>
             <nav>
-                <a href="#">About us</a>
-                <a href="#">Services</a>
-                <a href="#">Faq</a>
-                <a href="#">Contacts</a>
-                <a href="#">Useful</a>
+                <a href="#about">About us</a>
+                <a href="#service">Services</a>
+                <a href="#faq">Faq</a>
+                <a href="#contacts">Contacts</a>
+                <a href="#footer">Useful</a>
             </nav>
             <div class="search">
-                <div class="search-button">
+                <a href="#search" class="search-button">
                     <i class="stm-tracking"></i>
-                </div>
+                </a>
             </div>
         </div>
         <div class="slider">
@@ -125,7 +129,7 @@
         </div>
     </header>
     <main>
-        <div class="about-us container">
+        <div id="about" class="about-us container">
             <div class="annotation animated bounceInLeft">
                 <h2>WELCOME TO OUR COMPANY!</h2>
                 <p>Wheeltrans makes business flow. As one of the world’s leading non-asset-based supply chain management companies, we design and implement industry-leading solutions in both freight management.
@@ -167,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <div class="service">
+        <div id="service" class="service">
             <div class="container">
                 <div class="service-description">
                     <h2>SPECIAL SERVICES</h2>
@@ -254,7 +258,7 @@
                 <div class="contact-now-girl"></div>
             </div>
         </div>
-        <div class="faq">
+        <div id="faq" class="faq">
             <div class="container">
                 <div class="events">
                     <h2>Rewards and Events</h2>
@@ -380,7 +384,7 @@
                 <div class="partners-item"><img width="118" height="65" src="assets/images/partner6.jpg" alt="img"></div>
             </div>
         </div>
-        <div class="contact-form">
+        <div id="contacts" class="contact-form">
             <div class="container">
                 <div class="benefits-container">
                     <h2>WHAT MAKES US SPECIAL?</h2>
@@ -448,7 +452,7 @@
                 </div>
             </div>
         </div>
-        <div class="map-container">
+        <div id="search" class="map-container">
             <div class="map" id="map">
                 <div id="marker">Wheeltrans Central Office</div>
             </div>
@@ -623,17 +627,22 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-up" style="display: block;">
+        <a href="#home" class="page-scroll"><i class="fa fa-angle-up"></i></a>
+    </div>
+
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
-    <script type="text/javascript" src="assets/js/parallax.js"></script>
+    <script type="text/javascript" src="assets/js/parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.accordion.js"></script>
     <script type="text/javascript" src="assets/js/map.js"></script>
     <script type="text/javascript" src="assets/js/lifetext.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.smooth-scroll.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
