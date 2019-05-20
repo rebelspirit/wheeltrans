@@ -10,6 +10,7 @@ p {
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     color: #fff !important;
+    font-family: "Titillium Web", sans-serif;
 }
 a:hover, a:focus {
     text-decoration: none !important;
@@ -165,9 +166,9 @@ p .office {
 }
 .logo {
     display: block;
-    height: 39px;
+    height: 45px;
     width: 191px;
-    background-image: url(../images/logo.svg);
+    background-image: url(../images/w_logo_white.png);
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -295,7 +296,7 @@ nav > a:hover {
     margin-bottom: 40px;
 }
 .slider-description > h2 {
-    font-family: "Titillium Web" !important;
+    font-family: "Titillium Web", sans-serif !important;
     line-height: 54px;
     margin: 0 0 40px 0;
     padding: 5px !important;

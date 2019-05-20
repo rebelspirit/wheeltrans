@@ -45,18 +45,36 @@ jQuery(document).ready(function ($){
         onTranslated: function () {
             let item = $("#staff-slider").find("div.owl-item.active").find("div.item").find("div.staff-item");
             let container = $(".staff");
-            let bg1 = "url(assets/images/staff1.jpg)";
-            let bg2 = "url(assets/images/staff2.jpg)";
-            let bg3 = "url(assets/images/staff3.jpg)";
+            let html = $("html")[0].lang;
 
-            if(item.hasClass("steve")){
-                container.css("background-image", bg1)
+            let bg1_eng = "url(assets/images/staff1.jpg)";
+            let bg2_eng = "url(assets/images/staff2.jpg)";
+            let bg3_eng = "url(assets/images/staff3.jpg)";
+
+            let bg1_ru = "url(../assets/images/staff1.jpg)";
+            let bg2_ru = "url(../assets/images/staff2.jpg)";
+            let bg3_ru = "url(../assets/images/staff3.jpg)";
+
+            // English bg
+            if(item.hasClass("steve") && html === "en"){
+                container.css("background-image", bg1_eng)
             }
-            if(item.hasClass("anna")){
-                container.css("background-image", bg2)
+            if(item.hasClass("anna") && html === "en"){
+                container.css("background-image", bg2_eng)
             }
-            if(item.hasClass("jonathan")){
-                container.css("background-image", bg3)
+            if(item.hasClass("jonathan") && html === "en"){
+                container.css("background-image", bg3_eng)
+            }
+
+            // Russian bg
+            if(item.hasClass("steve") && html === "ru"){
+                container.css("background-image", bg1_ru)
+            }
+            if(item.hasClass("anna") && html === "ru"){
+                container.css("background-image", bg2_ru)
+            }
+            if(item.hasClass("jonathan") && html === "ru"){
+                container.css("background-image", bg3_ru)
             }
         }
     });
@@ -71,7 +89,15 @@ jQuery(document).ready(function ($){
     });
 
     // Parallax
-    $('.contact-now').parallax({imageSrc: './assets/images/parallax.jpg'});
+    let html = $("html").attr('lang');
+
+    if (html === "en") {
+        $('.contact-now').parallax({imageSrc: 'assets/images/parallax.jpg'});
+    }
+    if (html === "ru") {
+        $('.contact-now').parallax({imageSrc: '../assets/images/parallax.jpg'});
+    }
+
 
     // Accordion
     $('.accordion').accordion({
@@ -105,6 +131,12 @@ jQuery(document).ready(function ($){
         $("#menu_toggle").toggleClass("open");
         $(".mobile-menu").toggle();
     });
+
+    // Mobile Menu close after choose
+    $(".navigation-mobile a").click(function () {
+        $("#menu_toggle").removeClass("open");
+        $(".mobile-menu").hide();
+    })
 
     // Language option
     $(".lang:eq(1)").hide();
@@ -153,6 +185,8 @@ jQuery(document).ready(function ($){
         });
         return false;
     });
+
+
 
 
 });

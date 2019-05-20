@@ -69,11 +69,23 @@ function google_maps_init() {
 
     //   Google Maps Icon Marker
 
-    var markerIcon = {
-        url:'assets/images/mapIcon.png',
-        scaledSize: new google.maps.Size(42, 42),
-        origin: new google.maps.Point(0, 0),
+    let html = $("html").attr('lang');
+
+    if (html === "en") {
+        var markerIcon = {
+            url:'assets/images/mapIcon.png',
+            scaledSize: new google.maps.Size(42, 42),
+            origin: new google.maps.Point(0, 0),
+        }
     }
+    if (html === "ru") {
+        var markerIcon = {
+            url:'../assets/images/mapIcon.png',
+            scaledSize: new google.maps.Size(42, 42),
+            origin: new google.maps.Point(0, 0),
+        }
+    }
+
     var marker = new google.maps.Marker({
         position: roemerberg,
         map: map,
