@@ -104,8 +104,10 @@ p .office {
     top: 200%;
 }
 .russian, .english, .ukraine {
-    padding: 18px 40px 19px 20px;
+    display: block;
+    padding: 18px 40px 18px 18px;
     border: 1px solid transparent;
+    color: #fff;
 }
 .russian:hover, .english:hover, .ukraine:hover,
 .russian:active, .english:active, .ukraine:active,
@@ -584,6 +586,9 @@ nav > a:hover {
     margin-bottom: 25px !important;
 }
 .contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 195px;
     height: 53px;
     padding-left: 20px;
@@ -601,7 +606,8 @@ nav > a:hover {
     font-size: 13px;
 }
 .contact-button:hover {
-    color: #183650;
+    color: #183650 !important;
+    border: 2px solid #183650;
     background: transparent;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;

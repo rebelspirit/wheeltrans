@@ -150,7 +150,7 @@
         font-size: 16px;
         text-shadow: 1px 1px 1px black;
     }
-    .mobile-content button {
+    .mobile-content a {
         width: 180px;
         height: 53px;
         display: flex;
@@ -165,12 +165,12 @@
         font-weight: 700;
         margin: 25px;
     }
-    .mobile-content button:hover,
-    .mobile-content button:active {
+    .mobile-content a:hover,
+    .mobile-content a:active {
         background: #34ccff;
         color: #183650;
     }
-    .mobile-content button i {
+    .mobile-content a i {
         margin-left: 10px;
     }
     .video-img {
