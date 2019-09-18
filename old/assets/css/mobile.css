@@ -173,12 +173,6 @@
     .mobile-content a i {
         margin-left: 10px;
     }
-    .about-us {
-        flex-wrap: wrap;
-    }
-    .leftSide-annotation {
-        margin: 25px 0 0 0;
-    }
     .video-img {
         display: none;
     }
@@ -254,11 +248,5 @@
 @media (min-width: 665px) {
     .stats > .container {
         flex-direction: row;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .staff-item > p {
-        font-size: 14px;
     }
 }

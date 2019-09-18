@@ -262,7 +262,7 @@ nav > a:hover {
 }
 .slider-item:nth-child(3) {
     height: 900px;
-    background-image: url(../images/slider_2.jpg);
+    background-image: url(../images/slider_3.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -327,11 +327,11 @@ nav > a:hover {
 }
 .slider-navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .slider-navigation-item {
     width: 100%;
-    max-width: 535px;
+    max-width: 285px;
     position: relative;
     text-align: center;
     font-size: 18px;
@@ -343,7 +343,7 @@ nav > a:hover {
 }
 .slider-navigation-image {
     position: absolute;
-    width: 555px;
+    width: 277px;
     height: 117px;
     font-size: 90px;
     top: -117px;
@@ -373,7 +373,6 @@ nav > a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
-
 }
 .annotation {
     width: 100%;
@@ -409,10 +408,6 @@ nav > a:hover {
     background-repeat: no-repeat;
     margin: 0 30px;
 }
-.leftSide-annotation {
-    max-width: 540px;
-    margin: 0 0 0 25px;
-}
 .video-img {
     width: 540px;
     height: 358px;
@@ -421,8 +416,7 @@ nav > a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-bottom: 25px;
-
+    margin: 0 0 0 25px;
 }
 .stats {
     display: flex;
@@ -504,7 +498,7 @@ nav > a:hover {
 }
 .service-navigation {
     width: 100%;
-    max-width: 25px;
+    max-width: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
