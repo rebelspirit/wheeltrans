@@ -186,7 +186,21 @@ jQuery(document).ready(function ($){
         return false;
     });
 
-
-
+    $(".popup-close").click(function () {
+        $(".popup").css("display", "none");
+        $("#body").css("overflow-x:", "auto");
+    });
+    $("#aboutus-popup").click(function () {
+        $("#body").css("overflow-x:", "hidden");
+        $("#aboutus-popup-show").css("display", "block");
+    });
+    $("#expeditor-popup").click(function () {
+        $("#body").css("overflow-x:", "hidden");
+        $("#expeditor-popup-show").css("display", "block");
+    });
+    $("#incoterms-popup").click(function () {
+        $("#body").css("overflow-x:", "hidden");
+        $("#incoterms-popup-show").css("display", "block");
+    });
 
 });
