@@ -1061,8 +1061,8 @@ li a {
 .popup-header .popup-close {
     position: absolute;
     top: -40px;
-    right: 5px;
-    font-size: 20px;
+    right: -3px;
+    font-size: 23px;
     font-weight: bold;
     display: inline-block;
     color: #000;
