@@ -185,6 +185,14 @@ jQuery(document).ready(function ($){
         });
         return false;
     });
+    $('.contact-button').click(function () {
+        const link = this;
+        $.smoothScroll({
+            speed: 1500,
+            scrollTarget: link.hash
+        });
+        return false;
+    });
 
     $(".popup-close").click(function () {
         $(".popup").css("display", "none");
@@ -202,5 +210,16 @@ jQuery(document).ready(function ($){
         $("#body").css("overflow-x:", "hidden");
         $("#incoterms-popup-show").css("display", "block");
     });
-
+    $("#naval-transportation").click(function () {
+        $("#body").css("overflow-x:", "hidden");
+        $("#naval-transportation-show").css("display", "block");
+    });
+    $("#auto-transportation").click(function () {
+        $("#body").css("overflow-x:", "hidden");
+        $("#auto-transportation-show").css("display", "block");
+    });
+    $("#non-cargo").click(function () {
+        $("#body").css("overflow-x:", "hidden");
+        $("#non-cargo-show").css("display", "block");
+    });
 });
