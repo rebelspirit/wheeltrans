@@ -128,7 +128,6 @@
         color: #183650 !important;
     }
     .mobile-content {
-        height: 88vh;
         background-image: url(../images/mobile_slide.jpg);
         -webkit-background-size: cover;
         background-size: cover;

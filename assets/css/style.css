@@ -707,6 +707,7 @@ nav > a:hover {
     font-size: 13px;
     line-height: 22px;
     margin-bottom: 20px !important;
+    color: grey !important;
 }
 .events-navigation {
     display: flex;
